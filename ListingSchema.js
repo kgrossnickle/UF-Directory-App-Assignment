@@ -4,8 +4,8 @@ var mongoose = require('mongoose'),
 
 /* Create your schema */
 var listingSchema = new Schema({
-  code: {type: String, required: false},
-  name: {type: String, required: false},
+  code: {type: String, required: true},
+  name: {type: String, required: true},
   coordinates: {
   	latitude: Number,
   	longitude: Number,
